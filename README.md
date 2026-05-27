@@ -160,4 +160,6 @@ React + Vite. Minimal, veloci, dirette.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,100:0A66C2&height=130&section=footer&text=Less%20talk.%20More%20build.&fontSize=20&fontColor=ffffff&animation=fadeIn"/>
 
+
+![snake](https://raw.githubusercontent.com/zozzy04/zozzy04/output/github-contribution-grid-snake-dark.svg)
 </div>
