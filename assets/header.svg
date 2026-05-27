@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1280 460" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', Times, serif">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+    <style>
+      .rv { animation: rv .9s cubic-bezier(.2,.7,.2,1) both; }
+      @keyframes rv { from { opacity: 0; } to { opacity: 1; } }
+      .d1{animation-delay:.05s}.d2{animation-delay:.25s}
+      .d3{animation-delay:.45s}.d4{animation-delay:.65s}.d5{animation-delay:.85s}
+      .draw { animation: draw 1.1s ease both .3s; }
+      @keyframes draw { from { stroke-dashoffset: 1200; } to { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+
+  <rect width="1280" height="460" fill="#F6F3EC"/>
+  <rect width="1280" height="460" fill="#F6F3EC" filter="url(#grain)"/>
+
+  <rect x="34" y="34" width="1212" height="392" fill="none" stroke="#211E1A" stroke-width="1.6"/>
+  <rect x="43" y="43" width="1194" height="374" fill="none" stroke="#1F5C8F" stroke-width="0.9"/>
+
+  <g class="rv d1">
+    <text x="80" y="100" font-size="14" letter-spacing="3.2" fill="#877F70">AI DEVELOPER · DATA ANALYST</text>
+    <text x="1200" y="100" font-size="14" letter-spacing="3.2" fill="#877F70" text-anchor="end">VENEZIA — ITALIA</text>
+  </g>
+  <line class="draw" x1="80" y1="120" x2="1200" y2="120" stroke="#211E1A" stroke-width="1" stroke-dasharray="1200"/>
+
+  <text class="rv d2" x="640" y="252" font-size="86" letter-spacing="1.5"
+        fill="#211E1A" text-anchor="middle">Riccardo Zozzolotto</text>
+
+  <g class="rv d3">
+    <line x1="468" y1="296" x2="600" y2="296" stroke="#211E1A" stroke-width="1"/>
+    <rect x="633" y="289" width="14" height="14" fill="#1F5C8F" transform="rotate(45 640 296)"/>
+    <line x1="680" y1="296" x2="812" y2="296" stroke="#211E1A" stroke-width="1"/>
+  </g>
+
+  <text class="rv d4" x="640" y="352" font-size="24" font-style="italic"
+        fill="#3A352E" text-anchor="middle">Production-ready LLM systems — from ingestion to insight.</text>
+
+  <line class="draw" x1="80" y1="388" x2="1200" y2="388" stroke="#211E1A" stroke-width="1" stroke-dasharray="1200"/>
+  <text class="rv d5" x="640" y="412" font-size="13" letter-spacing="2.6"
+        fill="#877F70" text-anchor="middle">MACHINE LEARNING&#160;&#160;&#160;·&#160;&#160;&#160;AUTOMATION&#160;&#160;&#160;·&#160;&#160;&#160;DASHBOARDS</text>
+</svg>
